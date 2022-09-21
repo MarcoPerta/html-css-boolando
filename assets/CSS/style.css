@@ -164,3 +164,23 @@ header {
     text-decoration: line-through;
 }
 
+/* CSS footer */
+
+footer{
+    background-color: #000000;
+    margin-top: 125px;
+    height: 10vh;
+}
+
+.footer-container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h4, span, h5 {
+    color: white;
+}
+
+footer span {
+    padding-right: 5px;
+}
