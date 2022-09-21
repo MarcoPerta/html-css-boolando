@@ -10,6 +10,7 @@ header {
     position: fixed;
     background-color: #FF6900;
     width: 100vw;
+    z-index: 1;
 }
 
 .flex {
@@ -55,29 +56,41 @@ header {
 .main-container {
     justify-content: space-between;
     padding-top: 60px;
+    flex-wrap: wrap;
 }
+/* inizio hover sulle img */
 
-.foto1, .foto2, .foto3 {
+.foto1, .foto2, .foto3, .foto4, .foto5, .foto6  {
     height: 500px;
+    width: 30%;
 }
 
-.foto1 img, .foto2 img, .foto3 img {
+.foto1 img, .foto2 img, .foto3 img, .foto4 img, .foto5 img, .foto6 img {
     height: 100%;
+    width: 100%;
+}
+
+.foto1:hover .fotoB, .foto2:hover .fotoB, .foto3:hover .fotoB, .foto4:hover .fotoB, .foto5:hover .fotoB, .foto6:hover .fotoB {
+    display: block;
+}
+
+.fotoA{
+    display: block;
+    position: absolute;
 }
 
 .fotoB {
     display: none;
+    position: absolute;
 }
 
-.main-container .fotoA:hover {
-    display: none;
-}
+/* fine hover sulle img */
 
-.main-container .fotoB:hover {
-    display: block;
-}
+.foto4, .foto5, .foto6 {
+    padding-top: 60px;
+}  
 
-.heart{
+.main-container .heart{
     width: 40px;
     height: 40px;
     background-color: white;
@@ -87,12 +100,67 @@ header {
     text-align: center;
 }
 
-.heart span {
+.main-container .heartB{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    top: 68px;
+    right: 0;
+    text-align: center;
+}
+
+.heart span , .heartB span  {
     font-size: 30px;
     color: black;
 }
 
-.main-container .heart span:hover{
+.main-container .heart span:hover, .main-container .heartB span:hover{
     color: red;
+}
+
+.discount {
+    background-color: red;
+    padding: 5px;
+    color: white;
+    display: inline-block;
+}
+
+.sustainability {
+    background-color: green;
+    padding: 5px;
+    color: white;
+    display: inline-block;
+}
+
+.position {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+}
+
+.description {
+    position: absolute;
+    bottom: -54px;
+    left: 0;
+}
+
+.descriptionB {
+    position: absolute;
+    bottom: -113px;
+    left: 0;
+}
+
+
+.grey{
+    color: grey;
+}
+
+.red{
+    color: red;
+}
+
+.top-line{
+    text-decoration: line-through;
 }
 
