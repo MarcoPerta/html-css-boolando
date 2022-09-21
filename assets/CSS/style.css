@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}    
+
+/* CSS Header e lementi interni  */
+
+header {
+    position: fixed;
+    background-color: #FF6900;
+    width: 100vw;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+     width: 80%;
+     margin: auto;
+     justify-content: space-around;
+     align-items: center;
+}
+
+.container a {
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.container a:hover{
+    text-decoration: underline;
+}
+
+.container img{
+    width: 100px;
+    height: 25px;
+}
+
+/* fine CSS lementi interni */
